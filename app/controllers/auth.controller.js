@@ -78,7 +78,7 @@ exports.signin = async (req, res) => {
       username: user.username,
       email: user.email,
       roles: authorities,
-	  accessToken: token
+      accessToken: token
     });
   } catch (error) {
     return res.status(500).send({ message: error.message });
